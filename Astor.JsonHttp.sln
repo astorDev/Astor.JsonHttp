@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astor.JsonHttp", "Astor.JsonHttp\Astor.JsonHttp.csproj", "{E98F9546-0876-4A36-90E4-1EA5D58ADFC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleWebApi", "ExampleWebApi\ExampleWebApi.csproj", "{769A872C-0A28-450E-A2EB-4974F5B18C4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astor.JsonHttp.Tests", "Astor.JsonHttp.Tests\Astor.JsonHttp.Tests.csproj", "{0BCEDFC3-714D-42B0-983A-A98E4C904D68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E98F9546-0876-4A36-90E4-1EA5D58ADFC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E98F9546-0876-4A36-90E4-1EA5D58ADFC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E98F9546-0876-4A36-90E4-1EA5D58ADFC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E98F9546-0876-4A36-90E4-1EA5D58ADFC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{769A872C-0A28-450E-A2EB-4974F5B18C4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{769A872C-0A28-450E-A2EB-4974F5B18C4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{769A872C-0A28-450E-A2EB-4974F5B18C4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{769A872C-0A28-450E-A2EB-4974F5B18C4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BCEDFC3-714D-42B0-983A-A98E4C904D68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BCEDFC3-714D-42B0-983A-A98E4C904D68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BCEDFC3-714D-42B0-983A-A98E4C904D68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BCEDFC3-714D-42B0-983A-A98E4C904D68}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
