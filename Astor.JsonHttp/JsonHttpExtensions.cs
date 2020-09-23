@@ -10,9 +10,33 @@ namespace Astor.JsonHttp
     {
         public static Task<HttpResponseMessage> PostJsonAsync(this HttpClient client, string uri, object obj)
         {
+            return SendJsonAsync(client, uri, HttpMethod.Post, obj);
+        }
+
+        public static Task<HttpResponseMessage> PutJsonAsync(this HttpClient client, string uri, object obj)
+        {
+            return SendJsonAsync(client, uri, HttpMethod.Put, obj);
+        }
+
+        public static Task<HttpResponseMessage> PatchJsonAsync(this HttpClient client, string uri, object obj)
+        {
+            return SendJsonAsync(client, uri, new HttpMethod("PATCH"), obj);
+        }
+
+        public static Task<HttpResponseMessage> SendJsonAsync(this HttpClient client, string uri, HttpMethod method,
+            object obj)
+        {
+            var request = new HttpRequestMessage(method, uri);
             var body = new StringContent(JsonConvert.SerializeObject(obj));
             body.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
-            return client.PostAsync(uri, body);
+            request.Content = body;
+            return client.SendAsync(request);
+        }
+
+        public static async Task<T> ReadJsonAsync<T>(this HttpContent content)
+        {
+            var json = await content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<T>(json);
         }
     }
 }
